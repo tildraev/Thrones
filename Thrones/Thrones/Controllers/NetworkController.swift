@@ -67,6 +67,7 @@ class NetworkController {
                 }
                 
             } catch {
+                print("hi")
                 print(error.localizedDescription)
                 completion(nil)
                 return

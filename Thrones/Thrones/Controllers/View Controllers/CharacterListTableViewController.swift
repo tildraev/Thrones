@@ -16,7 +16,7 @@ class CharacterListTableViewController: UITableViewController {
     
     var characters: [Character] = []
     
-    static var pageNumber: Int = 0
+    static var pageNumber: Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +34,7 @@ class CharacterListTableViewController: UITableViewController {
     
     func updateView() {
         
-        pageTitleNavigationItem.title = "Game of Thrones Characters - Page \(CharacterListTableViewController.pageNumber + 1)"
+        pageTitleNavigationItem.title = "G.O.T. Characters - Page \(CharacterListTableViewController.pageNumber)"
         NetworkController.fetchCharacters { characters in
             guard let characters = characters else { return }
             self.characters = characters
@@ -63,7 +63,7 @@ class CharacterListTableViewController: UITableViewController {
     }
     
     @IBAction func previousPageButtonTapped(_ sender: Any) {
-        if CharacterListTableViewController.pageNumber > 0 {
+        if CharacterListTableViewController.pageNumber > 1 {
             CharacterListTableViewController.pageNumber -= 1
         }
         updateView()

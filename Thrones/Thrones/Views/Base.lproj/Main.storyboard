@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Game of Thrones Characters-->
+        <!--G.O.T. Characters-->
         <scene sceneID="A7F-26-ok1">
             <objects>
                 <tableViewController id="L5Q-g0-dZM" customClass="CharacterListTableViewController" customModule="Thrones" customModuleProvider="target" sceneMemberID="viewController">
@@ -80,7 +80,7 @@
                             <outlet property="delegate" destination="L5Q-g0-dZM" id="wMp-64-gzu"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Game of Thrones Characters" id="d57-MC-7zr"/>
+                    <navigationItem key="navigationItem" title="G.O.T. Characters" id="d57-MC-7zr"/>
                     <connections>
                         <outlet property="nextPageButton" destination="F7Q-hy-q7Y" id="lWg-lY-7Xp"/>
                         <outlet property="pageTitleNavigationItem" destination="d57-MC-7zr" id="6ze-1b-oeM"/>
