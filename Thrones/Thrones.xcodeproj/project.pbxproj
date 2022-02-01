@@ -13,6 +13,9 @@
 		D2416BF527A9CB57004350F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2416BF327A9CB57004350F3 /* Main.storyboard */; };
 		D2416BF727A9CB58004350F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2416BF627A9CB58004350F3 /* Assets.xcassets */; };
 		D2416BFA27A9CB58004350F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2416BF827A9CB58004350F3 /* LaunchScreen.storyboard */; };
+		D2416C0827A9CCA1004350F3 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2416C0727A9CCA1004350F3 /* Character.swift */; };
+		D2416C0A27A9D197004350F3 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2416C0927A9D197004350F3 /* NetworkController.swift */; };
+		D2416C0C27A9D93F004350F3 /* CharacterListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2416C0B27A9D93F004350F3 /* CharacterListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		D2416BF627A9CB58004350F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2416BF927A9CB58004350F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2416BFB27A9CB58004350F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2416C0727A9CCA1004350F3 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		D2416C0927A9D197004350F3 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		D2416C0B27A9D93F004350F3 /* CharacterListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,66 @@
 		D2416BEC27A9CB57004350F3 /* Thrones */ = {
 			isa = PBXGroup;
 			children = (
+				D2416C0427A9CC86004350F3 /* Models */,
+				D2416C0327A9CC81004350F3 /* Views */,
+				D2416C0227A9CC7C004350F3 /* Controllers */,
+				D2416C0127A9CC27004350F3 /* Resources */,
+				D2416BF127A9CB57004350F3 /* ViewController.swift */,
+			);
+			path = Thrones;
+			sourceTree = "<group>";
+		};
+		D2416C0127A9CC27004350F3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				D2416BED27A9CB57004350F3 /* AppDelegate.swift */,
 				D2416BEF27A9CB57004350F3 /* SceneDelegate.swift */,
-				D2416BF127A9CB57004350F3 /* ViewController.swift */,
-				D2416BF327A9CB57004350F3 /* Main.storyboard */,
 				D2416BF627A9CB58004350F3 /* Assets.xcassets */,
 				D2416BF827A9CB58004350F3 /* LaunchScreen.storyboard */,
 				D2416BFB27A9CB58004350F3 /* Info.plist */,
 			);
-			path = Thrones;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D2416C0227A9CC7C004350F3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2416C0627A9CC93004350F3 /* View Controllers */,
+				D2416C0527A9CC8D004350F3 /* Model Controllers */,
+				D2416C0927A9D197004350F3 /* NetworkController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D2416C0327A9CC81004350F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2416BF327A9CB57004350F3 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D2416C0427A9CC86004350F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2416C0727A9CCA1004350F3 /* Character.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D2416C0527A9CC8D004350F3 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		D2416C0627A9CC93004350F3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2416C0B27A9D93F004350F3 /* CharacterListTableViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +195,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2416C0A27A9D197004350F3 /* NetworkController.swift in Sources */,
 				D2416BF227A9CB57004350F3 /* ViewController.swift in Sources */,
 				D2416BEE27A9CB57004350F3 /* AppDelegate.swift in Sources */,
+				D2416C0C27A9D93F004350F3 /* CharacterListTableViewController.swift in Sources */,
 				D2416BF027A9CB57004350F3 /* SceneDelegate.swift in Sources */,
+				D2416C0827A9CCA1004350F3 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +351,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9V3Q6X8V58;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Thrones/Info.plist;
+				INFOPLIST_FILE = Thrones/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +379,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9V3Q6X8V58;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Thrones/Info.plist;
+				INFOPLIST_FILE = Thrones/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
